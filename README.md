@@ -1,20 +1,19 @@
 # Simple TOTP generator
 
-Reads a secret key, encoded with base32, and outputs
+Reads a secret key, base32-encoded, and outputs TOTP (Time-based One Time Password) as defined in https://datatracker.ietf.org/doc/html/rfc6238
 
+Typical usage:
 ```
 % cat /path/to/secret/key.txt | totp
 ```
 
 For example:
-
 ```
 % cat example_key.txt | totp
 012359%
 ```
 
 Supported flags are (all optional):
-
 ```
 % totp
 Usage of totp:
