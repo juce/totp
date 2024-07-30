@@ -9,7 +9,6 @@ Reads a secret key, encoded with base32, and outputs
 For example:
 
 ```
-echo | ./totp
 % cat example_key.txt | totp
 012359%
 ```
